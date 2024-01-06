@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginViewActivity">
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editTextTextEmailAddress2"
+            android:imeOptions="actionNext"
+            android:hint="Email" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="61dp"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:ems="10"
+            android:maxLength="6"
+            android:id="@+id/editTextTextPassword2"
+            android:imeOptions="actionDone"
+            android:hint="Password" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="Login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="13dp" app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="Please enter a valid email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            android:textColor="#D31616"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginBottom="7dp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2" android:visibility="invisible"/>
+    <TextView
+            android:text="Please enter a password with 6 digits!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            android:textColor="#B31616"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword2" android:layout_marginStart="8dp"
+            android:layout_marginBottom="40dp" android:visibility="invisible"/>
+    <TextView
+            android:text="The provided login data isn't valid!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/generalTextView" tools:layout_editor_absoluteY="35dp"
+            tools:layout_editor_absoluteX="184dp" android:textColor="#F44336" android:visibility="invisible"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

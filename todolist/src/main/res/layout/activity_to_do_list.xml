@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="639dp">
+    </ListView>
+    <Switch
+            android:text="Show important Todos first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/switch1"/>
+    <Button
+            android:text="Add new Todo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button"/>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+repo: bc49d3413646c1ac6508e93fde444ba86b679cd9
+node: 2fd4909ed6abc3b2913a713499bab18b60efb311
+branch: 2000-termproject-template
+latesttag: null
+latesttagdistance: 26
+changessincelatesttag: 39
