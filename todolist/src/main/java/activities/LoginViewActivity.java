@@ -28,7 +28,7 @@ public class LoginViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login_view);
 
         //CHANGE this URL to the URL of YOUR backend
-        checker = new LoginChecker("http://172.20.177.214:8080/backend-1.0-SNAPSHOT/rest");
+        checker = new LoginChecker("http://your-url-here.com");
 
         Button button = findViewById(R.id.button2);
         final EditText ticketMail1 = findViewById(R.id.editTextTextEmailAddress2);
