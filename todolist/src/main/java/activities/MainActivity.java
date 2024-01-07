@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void testConnection(){
-        restAccessor = new ResteasyTodoCRUDAccessor("http://172.20.177.214:8080/backend-1.0-SNAPSHOT/rest");
+        //Change this to your backend url
+        restAccessor = new ResteasyTodoCRUDAccessor("http://your-url-here.com");
 
         if(restAccessor.testConnection()){
             startActivity(new Intent(MainActivity.this, LoginViewActivity.class));
