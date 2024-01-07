@@ -25,6 +25,7 @@ public class ItemDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_details);
 
+        //Get all the relevant UI elements
         TextView name = findViewById(R.id.textView3);
         TextView description = findViewById(R.id.textView4);
         TextView dueDate = findViewById(R.id.textView5);
@@ -36,12 +37,17 @@ public class ItemDetailsActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         if(intent.hasExtra("1234")){
+
+            //Get the Todo object which was selected by the User
             Todo todo = (Todo) intent.getSerializableExtra("1234");
             name.setText("Name: " +todo.getName());
             description.setText("Description: " + todo.getDescription());
 
+            //Just to make sure that the due date is displayed correctly
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
 
+
+            //Set due date, importance and isFinished label
             if(todo.getDateTime() != null)
                 dueDate.setText("Due date: " + todo.getDateTime().format(formatter));
 
@@ -60,6 +66,8 @@ public class ItemDetailsActivity extends AppCompatActivity {
             ToDoListActivity previousActivity = ToDoListActivity.getInstance();
             accessor = previousActivity.getAsyncCRUDAccessor();
 
+
+            //I extracted some methods here to not put everything in onCreate
             getOnCheckedChangeListener(importance, todo);
 
             getChangeListener(finished, todo);
