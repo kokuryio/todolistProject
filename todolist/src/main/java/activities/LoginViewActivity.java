@@ -17,6 +17,7 @@ import de.thb.fbi.msr.maus.einkaufsliste.R;
 import models.LoginData;
 import spi.LoginChecker;
 
+//!!!Remeber: this activity only gets called when there is a connection to the remote server
 public class LoginViewActivity extends AppCompatActivity {
 
     private LoginChecker checker;
@@ -25,6 +26,8 @@ public class LoginViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_view);
+
+        //CHANGE this URL to the URL of YOUR backend
         checker = new LoginChecker("http://172.20.177.214:8080/backend-1.0-SNAPSHOT/rest");
 
         Button button = findViewById(R.id.button2);
