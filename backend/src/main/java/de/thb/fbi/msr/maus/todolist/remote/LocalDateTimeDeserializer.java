@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+//This is to make things work with LocalDateTime objects, even though they do not work with JSON
 public class LocalDateTimeDeserializer extends JsonDeserializer <LocalDateTime> {
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
 
