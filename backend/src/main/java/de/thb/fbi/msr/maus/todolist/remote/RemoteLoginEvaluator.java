@@ -13,7 +13,7 @@ public class RemoteLoginEvaluator implements LoginAccessor {
         String password = login.getPassword();
 
 
-        if(email.equals("holza@th-brandenburg.de") && password.equals("123456")){
+        if(email.equals("randomemail@th-brandenburg.de") && password.equals("123456")){
             return true;
         }else
             return false;
