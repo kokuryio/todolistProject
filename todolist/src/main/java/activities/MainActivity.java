@@ -6,6 +6,8 @@ import android.os.Bundle;
 import de.thb.fbi.msr.maus.einkaufsliste.R;
 import remote.ResteasyTodoCRUDAccessor;
 
+//This activty only checks if there is a connection to the backend and only then forwards to the login activity, otherwise
+//straight forward to the Todo list
 public class MainActivity extends AppCompatActivity {
 
     private ResteasyTodoCRUDAccessor restAccessor;
