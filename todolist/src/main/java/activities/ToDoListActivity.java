@@ -13,6 +13,7 @@ import room.AsyncCRUDAccessor;
 import java.time.LocalDateTime;
 import java.util.Calendar;
 
+//List view of the TodoList, but used the AsyncCRUD accessor to actually access the TODO objects
 public class ToDoListActivity extends AppCompatActivity {
 
     private AsyncCRUDAccessor asyncCRUDAccessor;
