@@ -30,7 +30,8 @@ public class AsyncCRUDAccessor implements TodoCRUDAccessor {
     private ToDoListActivity context;
 
     public AsyncCRUDAccessor(ToDoListActivity ToDoListActivity) {
-        switchCRUDAccessor = new SwitchCRUDAccessor(ToDoListActivity, "http://172.20.177.214:8080/backend-1.0-SNAPSHOT/rest");
+        //Change this to your backeend Url
+        switchCRUDAccessor = new SwitchCRUDAccessor(ToDoListActivity, "http://your-url-here.com");
         context = ToDoListActivity;
 
         if(switchCRUDAccessor.getAccessorId() == 1){ //transfer data from local database to remote service if needed
