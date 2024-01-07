@@ -9,7 +9,7 @@ It is possible to store the tasks from the app remotely using a REST service. I 
 and change the IP - Adress in LoginViwActivity.java (line 28), MainActivity.java (line 23), AsyncCRUDAccessor.java (line 33) and in the 
 network_security_config.xml. 
 
-However, this i not necessary for the use of the app. Todo items will be saved locally on your device as well. 
+However, this is not necessary for the use of the app. Todo items will be saved locally on your device as well. 
 Remember that the app MUST be used whilst having the dark mode of your device turned on, or otherwise you will not see the titles of the todos because I accidently set their font color to white
 (please excuse this - it is my first time making an app and I was just testing it with dark mode turned on).
 
