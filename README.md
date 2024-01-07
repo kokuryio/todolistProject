@@ -2,7 +2,7 @@
 
 ## Reminder
 Please remember - this is my first project as a student and therefore is not made well. Please be kind to me and do not expect the App to do any wonders - you can get way better apps
-of this kind at the PlayStore/Appstore already.
+of this kind at the PlayStore/Appstore already. Also remember that this app was created in cooperation with my home university - Brandenburg University of Applied Sciences and therefore there are some code passages which are inspired or copied from my lectures. (less than 5% of code). Those passages are marked accordingly. 
 
 ## How to execute
 It is possible to store the tasks from the app remotely using a REST service. I used a WildFly server as the backened, however you need to keep in mind to set everything up accordingly
